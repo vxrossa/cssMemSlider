@@ -5,12 +5,13 @@ h1{
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   font-weight: 200;
+  font-size: 20px;
   text-align: center;
 }
 .slider{
   background-color: #4C566A;
   width: 90%;
-  height: 750px;
+  height: 850px;
   margin: 50px auto 0;
   box-shadow: 10px 10px 39px 1px rgba(34, 60, 80, 0.2);
   border-radius: 20px;
@@ -19,40 +20,36 @@ h1{
 .slider p{
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
+  margin: 0;
 }
 .slider-wrapper{
   background-color: #D8DEE9;
-  width: 600px;
-  height: 600px;
+  width: 820px;
+  height: 800px;
   margin: 0 auto;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.slider-input{
-  width: 40%;
-  height: 20px;
-  margin: 20px auto;
   display: flex;
-  justify-content: center;
-}
-.slider-input input{
-  margin: 0px 20px;
-  height: 20px;
-  width: 20px;
-  transition: 0.5s ease;
-}
-.slider-input input:hover{
-  transition: 0.5s ease;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .slider-element{
   background-color: blue;
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+}
+.slides{
   height: 100%;
   width: 500%;
-  transform: translateX(-80%);
   display: flex;
+  transform: translateX(-20%);
 }
-.slider-element .meme1{height: 100%; width: 20%; background-image: url(../shittymemes/front.jpg); background-size: cover;}
-.slider-element .meme2{height: 100%; width: 20%; background-image: url(../shittymemes/pc2.jpg); background-size: cover;}
-.slider-element .meme3{height: 100%; width: 20%; background-image: url(../shittymemes/haudi.jpg); background-size: cover;}
-.slider-element .meme4{height: 100%; width: 20%; background-image: url(../shittymemes/cat.jpg); background-size: cover;}
-.slider-element .meme5{height: 100%; width: 20%; background-image: url(../shittymemes/gosling.jpg); background-size: cover;}
+.slides .meme1{height: 100%; width: 20%; background-image: url(../shittymemes/front.jpg); background-size: cover;}
+.slides .meme2{height: 100%; width: 20%; background-image: url(../shittymemes/pc2.jpg); background-size: cover;}
+.slides .meme3{height: 100%; width: 20%; background-image: url(../shittymemes/haudi.jpg); background-size: cover;}
+.slides .meme4{height: 100%; width: 20%; background-image: url(../shittymemes/cat.jpg); background-size: cover;}
+.slides .meme5{height: 100%; width: 20%; background-image: url(../shittymemes/gosling.jpg); background-size: cover;}
+
+.slider-controls{
+  background-color: yellow;
+  order: 2;
+}

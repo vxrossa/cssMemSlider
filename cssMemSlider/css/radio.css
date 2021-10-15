@@ -1,11 +1,14 @@
-input{
+/* input{
   height: 100%;
   width: 60%;
-}
+} */
 input[type="radio"]{
-  margin-right: -20px;
+  margin-right: 0px;
   cursor: pointer;
-  opacity: 0;
+  opacity: 1;
+  order: 1;
+  height: 50px;
+  width: 16px;
 }
 
 .radio-circle{
@@ -14,8 +17,8 @@ input[type="radio"]{
   border-radius: 50%;
   padding: 2px;
   align-self: center;
-  margin-right: 0px;
   background-color: #71abfe;
+  order: 1;
 }
 .radio-circle::before{
   content: '';
@@ -33,4 +36,20 @@ input[type="radio"]:checked + .radio-circle::before{
 }
 input[type="radio"]:hover + .radio-circle{
   background-color: white;
+  transition: 0.1s;
+}
+#in1:checked ~ .slider-element > .slides{
+  transform: translateX(0%); 
+}
+#in2:checked ~ .slider-element > .slides{
+  transform: translateX(-20%);
+}
+#in3:checked ~ .slider-element > .slides{
+  transform: translateX(-40%);
+}
+#in4:checked ~ .slider-element > .slides{
+  transform: translateX(-60%);
+}
+#in5:checked ~ .slider-element > .slides{
+  transform: translateX(-80%);
 }

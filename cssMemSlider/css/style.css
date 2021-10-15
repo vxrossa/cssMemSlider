@@ -22,8 +22,8 @@ h1{
 }
 .slider-wrapper{
   background-color: #D8DEE9;
-  width: 40%;
-  height: 80%;
+  width: 600px;
+  height: 600px;
   margin: 0 auto;
   border-radius: 20px;
   overflow: hidden;
@@ -48,11 +48,11 @@ h1{
   background-color: blue;
   height: 100%;
   width: 500%;
-  transform: translateX(0px);
+  transform: translateX(-80%);
   display: flex;
 }
-.slider-element .meme1{height: 100%; width: 20%; background-color: yellow;}
-.slider-element .meme2{height: 100%; width: 20%; background-color: red;}
-.slider-element .meme3{height: 100%; width: 20%; background-color: green;}
-.slider-element .meme4{height: 100%; width: 20%; background-color: orange;}
-.slider-element .meme5{height: 100%; width: 20%; background-color: cyan;}
+.slider-element .meme1{height: 100%; width: 20%; background-image: url(../shittymemes/front.jpg); background-size: cover;}
+.slider-element .meme2{height: 100%; width: 20%; background-image: url(../shittymemes/pc2.jpg); background-size: cover;}
+.slider-element .meme3{height: 100%; width: 20%; background-image: url(../shittymemes/haudi.jpg); background-size: cover;}
+.slider-element .meme4{height: 100%; width: 20%; background-image: url(../shittymemes/cat.jpg); background-size: cover;}
+.slider-element .meme5{height: 100%; width: 20%; background-image: url(../shittymemes/gosling.jpg); background-size: cover;}

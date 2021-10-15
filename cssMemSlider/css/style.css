@@ -10,7 +10,7 @@ h1{
 }
 .slider{
   background-color: #4C566A;
-  width: 90%;
+  width: 60%;
   height: 850px;
   margin: 50px auto 0;
   box-shadow: 10px 10px 39px 1px rgba(34, 60, 80, 0.2);
@@ -21,9 +21,9 @@ h1{
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
   margin: 0;
+  align-self: center;
 }
 .slider-wrapper{
-  background-color: #D8DEE9;
   width: 820px;
   height: 800px;
   margin: 0 auto;
@@ -41,7 +41,7 @@ h1{
   height: 100%;
   width: 500%;
   display: flex;
-  transform: translateX(-20%);
+  transform: translateX(0%);
 }
 .slides .meme1{height: 100%; width: 20%; background-image: url(../shittymemes/front.jpg); background-size: cover;}
 .slides .meme2{height: 100%; width: 20%; background-image: url(../shittymemes/pc2.jpg); background-size: cover;}
@@ -50,6 +50,13 @@ h1{
 .slides .meme5{height: 100%; width: 20%; background-image: url(../shittymemes/gosling.jpg); background-size: cover;}
 
 .slider-controls{
-  background-color: yellow;
   order: 2;
+  height: 10%;
+  display: flex;
+}
+.input-radio{
+  height: 100%;
+  width: 40px;
+  display: flex;
+  justify-content: flex-end;
 }

@@ -1,0 +1,36 @@
+input{
+  height: 100%;
+  width: 60%;
+}
+input[type="radio"]{
+  margin-right: -20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.radio-circle{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  padding: 2px;
+  align-self: center;
+  margin-right: 0px;
+  background-color: #71abfe;
+}
+.radio-circle::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: block;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.1s;
+}
+input[type="radio"]:checked + .radio-circle::before{
+  transform: scale(1);
+  transition: 0.1s;
+}
+input[type="radio"]:hover + .radio-circle{
+  background-color: white;
+}

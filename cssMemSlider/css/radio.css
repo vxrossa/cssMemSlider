@@ -5,10 +5,11 @@
 input[type="radio"]{
   margin-right: 0px;
   cursor: pointer;
-  opacity: 1;
+  opacity: 0;
   order: 1;
-  height: 50px;
-  width: 16px;
+  height: 60px;
+  width: 25px;
+  margin-left: 15px;
 }
 
 .radio-circle{
@@ -19,6 +20,8 @@ input[type="radio"]{
   align-self: center;
   background-color: #71abfe;
   order: 1;
+  pointer-events: none;
+  margin-left: -20px;
 }
 .radio-circle::before{
   content: '';

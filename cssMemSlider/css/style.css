@@ -1,0 +1,11 @@
+body{
+  background-color: #3B4252;
+}
+.slider{
+  background-color: #D8DEE9;
+  width: 60%;
+  height: 600px;
+  margin: 50px auto 0;
+  box-shadow: 10px 10px 39px 1px rgba(34, 60, 80, 0.2);
+  border-radius: 20px;
+}

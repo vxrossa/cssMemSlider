@@ -24,6 +24,8 @@ h1{
   margin: 0;
   align-self: center;
   width: 620px;
+  transition: 0.7s;t
+  transition-delay: 0.2s;
 }
 .slider-wrapper{
   width: 820px;
@@ -62,4 +64,21 @@ h1{
   width: 40px;
   display: flex;
   justify-content: flex-end;
+}
+.text-slider{
+  height: 50px;
+  overflow: hidden;
+  width: 600px;
+  align-self: flex-end;
+}
+.text-slider-element{
+  width: 500%;
+  height: 100%;
+  display: flex;
+  transition: 0.05s;
+  
+}
+.text-slider-element p{
+  height: 100%;
+  width: 20%;
 }

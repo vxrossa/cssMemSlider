@@ -9,7 +9,7 @@ input[type="radio"]{
   order: 1;
   height: 60px;
   width: 25px;
-  margin-left: 15px;
+  margin-left: 19px;
 }
 
 .radio-circle{
@@ -55,4 +55,56 @@ input[type="radio"]:hover + .radio-circle{
 }
 #in5:checked ~ .slider-element > .slides{
   transform: translateX(-80%);
+}
+
+#in1:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-0%);
+}
+#in2:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-20%);
+}
+#in3:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-40%);
+}
+#in4:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-60%);
+}
+#in5:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-80%);
+}
+
+
+#in1:checked ~ .text-slider > .text-slider-element > .p2,.p3,.p4,.p5{
+  opacity: 0;
+}
+#in1:checked ~ .text-slider > .text-slider-element > .p1{
+  opacity: 1;
+}
+
+#in2:checked ~ .text-slider > .text-slider-element > .p1,.p3,.p4,.p5{
+  opacity: 0;
+}
+#in2:checked ~ .text-slider > .text-slider-element > .p2{
+  opacity: 1;
+}
+
+#in3:checked ~ .text-slider > .text-slider-element > .p1,.p2,.p4,.p5{
+  opacity: 0;
+}
+#in3:checked ~ .text-slider > .text-slider-element > .p3{
+  opacity: 1;
+}
+
+#in4:checked ~ .text-slider > .text-slider-element > .p1,.p2,.p3,.p5{
+  opacity: 0;
+}
+#in4:checked ~ .text-slider > .text-slider-element > .p4{
+  opacity: 1;
+}
+
+#in5:checked ~ .text-slider > .text-slider-element > .p1,.p2,.p3,.p4{
+  opacity: 0;
+}
+#in5:checked ~ .text-slider > .text-slider-element > .p5{
+  opacity: 1;
 }

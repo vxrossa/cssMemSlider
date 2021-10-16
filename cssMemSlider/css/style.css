@@ -82,3 +82,44 @@ h1{
   height: 100%;
   width: 20%;
 }
+
+@media screen and (max-width: 1400px) {
+  body{
+    /* background-color: red; */
+  }
+  .slider{
+    width: 60%;
+    height: 660px;
+  }
+  .slider-wrapper{
+    width: 550px;
+    height: 550px;
+    justify-content: center;
+  }
+  .text-slider{
+    order: 2;
+  }
+  input{
+    justify-self: center;
+  }
+  
+}
+@media screen and (max-width: 930px) {
+  body{
+    background-color: blue;
+  }
+  .slider-wrapper{
+    width: 400px;
+    height: 400px;
+  }
+  
+}
+
+
+.thanks{
+  color: white;
+  font-family: 'Consolas', sans-serif;
+  font-size: 12px;
+  margin-top: 0px;
+  text-align: center;
+}

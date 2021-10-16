@@ -1,0 +1,155 @@
+body{
+  background-color: #3B4252;
+}
+h1{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-weight: 200;
+  font-size: 20px;
+  text-align: center;
+}
+.slider{
+  background-color: #4C566A;
+  width: 60%;
+  height: 860px;
+  margin: 50px auto 0;
+  box-shadow: 10px 10px 39px 1px rgba(34, 60, 80, 0.2);
+  border-radius: 20px;
+  padding: 20px;
+}
+.slider p{
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  align-self: center;
+  width: 620px;
+  transition: 0.7s;t
+  transition-delay: 0.2s;
+}
+.slider-wrapper{
+  width: 820px;
+  height: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.slider-element{
+  background-color: blue;
+  height: 90%;
+  width: 100%;
+  overflow: hidden;
+}
+.slides{
+  height: 100%;
+  width: 500%;
+  display: flex;
+  transform: translateX(0%);
+  transition: 0.5s ease;
+}
+.slides .meme1{height: 100%; width: 20%; background-image: url(../shittymemes/front.jpg); background-size: cover;}
+.slides .meme2{height: 100%; width: 20%; background-image: url(../shittymemes/pc2.jpg); background-size: cover;}
+.slides .meme3{height: 100%; width: 20%; background-image: url(../shittymemes/wtchr.jpg); background-size: cover;}
+.slides .meme4{height: 100%; width: 20%; background-image: url(../shittymemes/certificate.jpg); background-size: cover;}
+.slides .meme5{height: 100%; width: 20%; background-image: url(../shittymemes/metoda.jpg); background-size: cover;}
+
+.slider-controls{
+  order: 2;
+  height: 10%;
+  display: flex;
+}
+.input-radio{
+  height: 100%;
+  width: 40px;
+  display: flex;
+  justify-content: flex-end;
+}
+.text-slider{
+  height: 50px;
+  overflow: hidden;
+  width: 600px;
+  align-self: flex-end;
+}
+.text-slider-element{
+  width: 500%;
+  height: 100%;
+  display: flex;
+  transition: 0.05s;
+  
+}
+.text-slider-element p{
+  height: 100%;
+  width: 20%;
+}
+
+@media screen and (max-width: 1400px) {
+  .slider{
+    width: 60%;
+    height: 640px;
+  }
+  .slider-wrapper{
+    width: 550px;
+    height: 550px;
+    justify-content: center;
+  }
+  .text-slider{
+    order: 2;
+  }
+  input{
+    justify-self: center;
+  }
+  
+}
+@media screen and (max-width: 930px) {
+  .slider-wrapper{
+    width: 400px;
+    height: 400px;
+  }
+  .slider{
+    height: 550px;
+    padding: 10px;
+  }
+  
+}
+@media screen and (max-width: 680px) {
+  .slider-wrapper{
+    width: 300px;
+    height: 300px;
+  }
+  .slider{
+    height: 480px;
+    padding: 10px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 430px) {
+  .slider-wrapper{
+    width: 240px;
+    height: 240px;
+  }
+  h1{
+    font-size: 16px;
+  }
+  .p1,.p2{
+    font-size: 10px;
+  }
+  .slider{
+    padding: 20px;
+    height: 400px;
+  }
+  .text-slider{
+    height: 60px;
+  }
+  input[type="radio"]{
+    margin-left: 0px;
+  }
+}
+
+.thanks{
+  color: white;
+  font-family: 'Consolas', sans-serif;
+  font-size: 12px;
+  margin-top: 0px;
+  text-align: center;
+}

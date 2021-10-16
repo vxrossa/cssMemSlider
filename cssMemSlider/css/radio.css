@@ -1,0 +1,118 @@
+/* input{
+  height: 100%;
+  width: 60%;
+} */
+input[type="radio"]{
+  margin-right: 0px;
+  cursor: pointer;
+  opacity: 0;
+  order: 1;
+  height: 60px;
+  width: 25px;
+  margin-left: 19px;
+}
+
+.radio-circle{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  padding: 2px;
+  align-self: center;
+  background-color: #71abfe;
+  order: 1;
+  pointer-events: none;
+  margin-left: -20px;
+}
+.radio-circle::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  display: block;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.1s;
+}
+input[type="radio"]:checked + .radio-circle::before{
+  transform: scale(1);
+  transition: 0.1s;
+}
+input[type="radio"]:hover + .radio-circle{
+  background-color: white;
+  transition: 0.1s;
+}
+#in1:checked ~ .slider-element > .slides{
+  transform: translateX(0%); 
+}
+#in2:checked ~ .slider-element > .slides{
+  transform: translateX(-20%);
+}
+#in3:checked ~ .slider-element > .slides{
+  transform: translateX(-40%);
+}
+#in4:checked ~ .slider-element > .slides{
+  transform: translateX(-60%);
+}
+#in5:checked ~ .slider-element > .slides{
+  transform: translateX(-80%);
+}
+
+#in1:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-0%);
+}
+#in2:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-20%);
+}
+#in3:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-40%);
+}
+#in4:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-60%);
+}
+#in5:checked ~ .text-slider > .text-slider-element{
+  transform: translateX(-80%);
+}
+
+
+#in1:checked ~ .text-slider > .text-slider-element > .p2,.p3,.p4,.p5{
+  opacity: 0;
+}
+#in1:checked ~ .text-slider > .text-slider-element > .p1{
+  opacity: 1;
+}
+
+#in2:checked ~ .text-slider > .text-slider-element > .p1,.p3,.p4,.p5{
+  opacity: 0;
+}
+#in2:checked ~ .text-slider > .text-slider-element > .p2{
+  opacity: 1;
+}
+
+#in3:checked ~ .text-slider > .text-slider-element > .p1,.p2,.p4,.p5{
+  opacity: 0;
+}
+#in3:checked ~ .text-slider > .text-slider-element > .p3{
+  opacity: 1;
+}
+
+#in4:checked ~ .text-slider > .text-slider-element > .p1,.p2,.p3,.p5{
+  opacity: 0;
+}
+#in4:checked ~ .text-slider > .text-slider-element > .p4{
+  opacity: 1;
+}
+
+#in5:checked ~ .text-slider > .text-slider-element > .p1,.p2,.p3,.p4{
+  opacity: 0;
+}
+#in5:checked ~ .text-slider > .text-slider-element > .p5{
+  opacity: 1;
+}
+
+
+@media screen and (max-width: 1400px) {
+  input[type="radio"]{
+    margin-left: 10px;
+  }
+  
+}
